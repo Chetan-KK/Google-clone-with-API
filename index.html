@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="main-search flex">
+      <div class="logo">
+        <img src="/static/logo.png" alt="google image" />
+      </div>
+      <form class="search flex" onsubmit="event.preventDefault()">
+        <input class="search-bar" data-input type="text" />
+        <div class="buttons">
+          <input
+            class="search-button"
+            data-submit
+            type="submit"
+            value="Google Search"
+          />
+          <input
+            class="search-button"
+            data-imgSubmit
+            type="submit"
+            value="Image Search"
+          />
+        </div>
+      </form>
+    </div>
+    <div data-resultsBox class="main-search-results flex">
+      <div class="resultsBox">
+        <nav class="flex">
+          <img src="/static/logo.png" alt="" />
+          <div class="right">
+            <div class="timeTake"></div>
+            <div data-close class="closeButton">&times;</div>
+          </div>
+        </nav>
+        <div data-results class="results">
+          <div data-imgResults class="images flex"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/search.js"></script>
+    <script type="module" src="/js/imgSearch.js"></script>
+  </body>
+</html>

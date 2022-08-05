@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins&display=swap");
+:root {
+  --bg-color: #202124;
+  --text-color: white;
+  --link-color: #8ab4f8;
+  --border-color: gray;
+  --button-bg-color: #333333;
+  --ff: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--button-bg-color);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
