@@ -32,7 +32,8 @@ async function searchImgResult() {
     fetch(`https://google-image-search1.p.rapidapi.com/v2/?q=${searchInput.value}`, options)
         .then(response => response.json())
         .then(response => {
-
+            console.log('');
+            imgResults.innerHTML = `<h1 style='color:white;'>API does not exist</h1>`;
             function load() {
                 let repeat = 10 + i;
                 while (i < repeat) {
